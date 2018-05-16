@@ -2,7 +2,7 @@ nav {
   position: fixed;
   width: 12vw;
   height: 100vh;
-  background-color: grey;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .logo {
