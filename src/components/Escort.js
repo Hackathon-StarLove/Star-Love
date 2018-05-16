@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import './css/escort.css'
+// import React, { Component } from 'react'
+// import './css/escort.css'
 
-const Escort = (props) => {
-    return <div className="escort-canvas">
+// const Escort = (props) => {
+//     return <div className="escort-canvas">
 
-    </div>
-}
+//     </div>
+// }
 
-export default Escort
+// export default Escort

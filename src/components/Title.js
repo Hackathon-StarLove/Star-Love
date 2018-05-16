@@ -1,10 +1,6 @@
-class Title extends Component {
-    state = {  }
-    render() {
-        return (
-            <h1 ClassName= "MainTitle">Find your intergalatic escort </h1>
-        );
-    }
-}
+import React from 'react'
 
-export default Title;
+const Title = ({ text }) =>
+    <h1 className="Main-Title">{text}</h1>
+
+export default Title
