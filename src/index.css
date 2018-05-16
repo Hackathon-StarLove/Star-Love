@@ -16,3 +16,13 @@ a:visited {
   text-decoration: none;
   color: #fff;
 }
+
+.main-title {
+  margin: 4rem auto;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  color: #f9e713;
+  width: 100%;
+}

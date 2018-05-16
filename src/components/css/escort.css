@@ -2,6 +2,7 @@
     background: #fff;
     width: 33%;
     height: 33%;
+    border: solid #f9e713 0.2rem;
 }
 
 /* ---- EscortContainer style ---- */
@@ -10,15 +11,10 @@
     width: 88vw;
     height: 100vh;
     margin-left: 12vw;
-    display: flex;
+
 }
 
-.container h1 {
-    margin: 4rem auto 2rem;
-    font-size: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    color: #f9e713;
-    width: 100%;
+.escort-list {
+    display: flex;
+    height: 100%;
 }
