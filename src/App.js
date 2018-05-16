@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
-import './ProfilUser.js'
-import ProfilUser from './ProfilUser.js';
+import React, { Component } from 'react'
+import './App.css'
 import Navbar from './components/Navbar.js'
+import EscortContainer from './components/EscortContainer.js'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
+        <Navbar />
+        <EscortContainer />
         <ProfilUser/>
       </div>
     );
   }
 }
 
-export default App;
+export default App
