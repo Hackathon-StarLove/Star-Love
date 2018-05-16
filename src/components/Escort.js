@@ -3,7 +3,7 @@ import './css/escort.css'
 
 const Escort = (props) => {
     return <div className="escort-canvas">
-
+        
     </div>
 }
 
