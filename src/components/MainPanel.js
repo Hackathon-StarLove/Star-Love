@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Avatar from './Avatar.js'
+import './css/profile.css'
 
 
 export class MainPanel extends React.Component {

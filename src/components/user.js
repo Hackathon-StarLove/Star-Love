@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import './css/profile.css'
 
-export const user =
+export const User =
 {
     name: "Jane Doe",
     gender: "Female",
@@ -11,4 +12,4 @@ export const user =
   }
 
 
-export default user
+export default User

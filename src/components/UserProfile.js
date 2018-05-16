@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import user from './user.js'
+import User from './user.js'
 import MainPanel from './MainPanel.js'
+import './css/profile.css'
 
 
 export class UserProfile extends React.Component {
   render() {
     return (
       <div id="user-profile">
-        <MainPanel info={user} />
+        <MainPanel info={User} />
       </div>
     )
   }
