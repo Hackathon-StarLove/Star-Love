@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './App.css'
 import Navbar from './components/Navbar.js'
-// import EscortContainer from './components/EscortContainer.js'
+import UserProfil from './components/UserProfile.js'
+import Reserve from './components/ReserveButton.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
 import All from './components/Routes.js'
@@ -27,7 +28,9 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Title text="Find your intergalatic escort"/>
-        {/* <EscortContainer /> */}
+		
+        <UserProfil />
+		<Reserve name="reserve"/>
         {/* <BasicExample /> */}
         <All char={this.state.data} />
       </div>
