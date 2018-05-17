@@ -28,9 +28,9 @@ const createCharacterElement = character => {
 // fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
 // .then(res => res.json())   .then() export default All
 
-const API = 'https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json';
+const API = 'https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/1.json';
 
-class All extends Component {
+class EscortProfil extends Component {
     constructor() {
         super();
         this.state = {
@@ -38,7 +38,7 @@ class All extends Component {
         };
     }
     async componentDidMount() {
-        const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
+        const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/1.json')
         const json = await response.json()
         this.setState({data: json})
     }
@@ -58,4 +58,4 @@ class All extends Component {
     //     return <div>{char.map(createCharacterElement)}</div>
     }
 
-    export default All
+    export default EscortProfil
