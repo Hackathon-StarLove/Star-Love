@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.js'
 // import EscortContainer from './components/EscortContainer.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
+import All from './components/Routes.js'
 
 class App extends Component {
   state = {
@@ -19,9 +20,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Title text="Find your intergalatic escort"/>
+        <Title text="Find your intergalatic escort" name="blop"/>
         {/* <EscortContainer /> */}
         {/* <BasicExample /> */}
+        <All char={this.state.data} />
       </div>
     );
   }
