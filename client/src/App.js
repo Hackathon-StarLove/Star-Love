@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import './App.css'
 // import Navbar from './components/Navbar.js'
-import UserProfil from './components/UserProfile.js'
+
 import Reserve from './components/ReserveButton.js'
+import Star from './components/EscortProfil.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
 import EscortContainer from './components/EscortContainer.js'
@@ -43,17 +44,17 @@ class App extends Component {
                                 <li>
                                     <Link to="/escorts"><img src={escortbook} alt="Escorts book"/>
                                         <p>Escorts book</p>
+
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="myprofil">
-                                        <img src={myprofile} alt="My profile"/>
+                                    <Link to="/myprofil">
+                                        <img src="http://via.placeholder.com/70x70" alt="My profile"/>
                                         <p>My profile</p>
                                     </Link>
                                 </li>
                                 <li>
-								<Link to="reservation">
-                                    <img src={reservation} alt="My reservations"/>
+                                    <img src="http://via.placeholder.com/70x70" alt="My reservations"/>
                                     <p>My reservations</p>
 									</Link>
                                 </li>
@@ -64,9 +65,12 @@ class App extends Component {
                             <p>Log out</p>
                         </div>
                     </nav>
+
                     <Route path="/escorts" component={EscortContainer} char={this.state.data}/>
                     <Route exact path="/myprofil" component={UserProfil}/>
-					<Route exact path="/reservation" component={UserProfil}/>
+                    <Route path="/escorts" component={All}/>
+                    <Route exact path="/myprofil" component={Star}/>
+					<Route exact path="/reservation" component={Star}/>
                 </div>
             </Router>
         )
