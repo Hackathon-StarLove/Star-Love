@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Title text="Find your intergalatic escort" name="blop"/>
+        <Title text="Find your intergalatic escort"/>
         {/* <EscortContainer /> */}
         {/* <BasicExample /> */}
         <All char={this.state.data} />
