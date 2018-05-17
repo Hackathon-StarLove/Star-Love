@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Main-Title {
+  margin: 4rem auto;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  color: #f9e713;
+  width: 100%;
+}
