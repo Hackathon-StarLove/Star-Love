@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 // ROUTES
 
 app.get('/', (req, res) => {
-  res.json('hi')
+  res.json('A SUCCESFUL FETCH')
 })
 
 // new routes here..
