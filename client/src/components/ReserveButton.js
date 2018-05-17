@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 class Reserve extends Component {
-
   click() {
     alert();
   }
@@ -10,9 +9,6 @@ class Reserve extends Component {
       <button onClick={this.click.bind(this)}>
         {this.props.name}
       </button>
-
-
-
       )
   }
 }
