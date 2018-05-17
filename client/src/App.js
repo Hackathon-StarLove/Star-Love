@@ -6,11 +6,16 @@ import Reserve from './components/ReserveButton.js'
 import Star from './components/EscortProfil.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
-import All from './components/All.js'
+import EscortContainer from './components/EscortContainer.js'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
 import './components/css/profile.css'
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import logo from './img/star-love-02.png'
+import escortbook from './img/star-love-04.png'
+import myprofile from './img/star-love-03.png'
+import reservation from './img/star-love-05.png'
+import logout from './img/star-love-06.png'
 
 class App extends Component {
     state = {
@@ -32,12 +37,12 @@ class App extends Component {
                 <div className="App">
                     <nav>
                         <div className="logo">
-                            <Link to="/"><img src="http://via.placeholder.com/130x80" alt="Logo"/></Link>
+                            <Link to="/"><img src={logo} alt="Logo"/></Link>
                         </div>
                         <div className="nav-item">
                             <ul>
                                 <li>
-                                    <Link to="/escorts"><img src="http://via.placeholder.com/70x70" alt="Escorts book"/>
+                                    <Link to="/escorts"><img src={escortbook} alt="Escorts book"/>
                                         <p>Escorts book</p>
 
                                     </Link>
@@ -49,7 +54,6 @@ class App extends Component {
                                     </Link>
                                 </li>
                                 <li>
-								<Link to="/reservation">
                                     <img src="http://via.placeholder.com/70x70" alt="My reservations"/>
                                     <p>My reservations</p>
 									</Link>
@@ -57,10 +61,13 @@ class App extends Component {
                             </ul>
                         </div>
                         <div className="logout">
-                            <img src="http://via.placeholder.com/40x40" alt="Log out"/>
+                            <img src={logout} alt="Log out"/>
                             <p>Log out</p>
                         </div>
                     </nav>
+
+                    <Route path="/escorts" component={EscortContainer} char={this.state.data}/>
+                    <Route exact path="/myprofil" component={UserProfil}/>
                     <Route path="/escorts" component={All}/>
                     <Route exact path="/myprofil" component={Star}/>
 					<Route exact path="/reservation" component={Star}/>

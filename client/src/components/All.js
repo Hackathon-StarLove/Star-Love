@@ -5,17 +5,13 @@ import './css/profile.css'
 
 const createCharacterElement = character => {
     return (
-        <div>
+        <div className="escort-canvas">
             <a
-                className="character"
-                style={{
-                backgroundImage: `url(${character.pic})`
-            }}
-                href="profile.html?id==={character.id}">
+                className="character" href="profile.html?id==={character.id}">
                 <div className="character-infos">
-                    <div className="character-name">{character.name}</div>
-                    <div className="character-github"><img src={character.image}/>
+                    <div className="character-img"><img src={character.image}/>
                     </div>
+                    <div className="character-name"><p>{character.name}</p></div>
                 </div>
             </a>
         </div>
