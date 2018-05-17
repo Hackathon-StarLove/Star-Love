@@ -5,6 +5,7 @@ import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
+import LoginForm from './components/LoginForm.js'
 import All from './components/All.js'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
@@ -47,7 +48,7 @@ class App extends Component {
                                     </Link>
                                 </li>
                                 <li>
-								<Link to="reservation">
+								<Link to="loginform">
                                     <img src="http://via.placeholder.com/70x70" alt="My reservations"/>
                                     <p>My reservations</p>
 									</Link>
@@ -61,7 +62,7 @@ class App extends Component {
                     </nav>
                     <Route path="/escorts" component={All} char={this.state.data}/>
                     <Route exact path="/myprofil" component={UserProfil}/>
-					<Route exact path="/reservation" component={UserProfil}/>
+					<Route exact path="/loginform" component={LoginForm}/>
                 </div>
             </Router>
         )
