@@ -7,6 +7,7 @@ import UserProfile from './components/UserProfile.js'
 import MainPanel from './components/MainPanel.js'
 import Reserve from './components/ReserveButton.js'
 import Navbar from './components/Navbar.js'
+import ProfilUser from './components/ProfilUser.js'
 import Title from './components/Title.js'
 import All from './components/Routes.js'
 
@@ -26,6 +27,8 @@ class App extends Component {
                 {/* <Avatar/>
                 <MainPanel/>
                 <UserProfile/>
+                <Navbar/>
+                <ProfilUser/>
                 <Reserve name="Reserver"/> */}
                 <Navbar/>
                 <Title text="Find your intergalatic escort"/> {/* <BasicExample /> */}
