@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
+
 import './App.css'
+import Avatar from './components/Avatar.js'
+// import user from './components/user.js
+import UserProfile from './components/UserProfile.js'
+import MainPanel from './components/MainPanel.js'
+import Reserve from './components/ReserveButton.js'
 import Navbar from './components/Navbar.js'
-// import EscortContainer from './components/EscortContainer.js'
-// import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
 import All from './components/Routes.js'
+
 
 class App extends Component {
   state = {
@@ -19,16 +24,19 @@ class App extends Component {
     console.log(this.state.data)
     return (
       <div className="App">
+//       <Avatar />
+//       <MainPanel />
+//       <UserProfile />
+//       <Reserve name="Reserver"/>
         <Navbar />
         <Title text="Find your intergalatic escort"/>
-        {/* <EscortContainer /> */}
+
         {/* <BasicExample /> */}
         <All char={this.state.data} />
       </div>
-    );
+    )
   }
 }
 
-
-
 export default App
+
