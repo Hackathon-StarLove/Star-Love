@@ -1,41 +1,3 @@
-$magenta: #6b0a3a;
-$green: #60a568;
-$greenLight: lighten($green, 10%);
-
-@mixin dotBg($dotColor, $bgColor, $size) {
-  background-color:$bgColor;
-  background-image: radial-gradient($dotColor 15%, transparent 16%),
-  radial-gradient($dotColor 15%, transparent 16%);
-  background-size:$size*2 $size*2;
-  background-position: 0 0, $size $size;
-}
-
-
-body {
-  color: black;
-  background-color: $magenta;
-  padding: 20px 30px;
-  font-family: sans-serif;
-}
-
-#user-profile {
-  width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
-  border-radius: 5px;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 2px 2px 5px #000;
-  border: 1px solid #000;
-  @include dotBg(darken($green, 5%), $green, 30px);
-
-  hr {
-    margin: 20px auto;
-    width: 50px;
-    border: 1px solid $magenta;
-    background-color: transparent;
-  }
-
   h1, h2, h3, h4, h5, h6, p {
     margin: 0;
   }
@@ -64,18 +26,22 @@ body {
 
   .bottom {
 
-    background-color: rgba(white, 0.3);
-    text-align: left;
+    text-align: center;
   }
 
   .avatar {
-    border-radius: 50%;
+
     overflow: hidden;
     display: inline-flex;
     margin-bottom: 15px;
     border: 1px solid #000;
-    img {
-      width: 100%;
-    }
+    width:100px;
+    height:100px;
+
   }
-}
+
+  .avatar img {
+    width: 100px;
+    height: auto;
+  }
+

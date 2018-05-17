@@ -11,22 +11,21 @@ export class MainPanel extends React.Component {
     return (
      <div>
         <div className="top">
+            <h2>{info.name}</h2>
             <Avatar
                image={info.photo}
                width={100}
                height={100}
             />
-            <h2>{info.name}</h2>
-            <h3>{info.location}</h3>
-
-          <hr />
             <p>{info.gender} | {info.birthday}</p>
-        </div>
-
         <div className="bottom">
-          <h4>Biography</h4>
+          <h4>Description</h4>
           <p>{info.bio}</p>
         </div>
+
+          <hr />
+        </div>
+
       </div>
     );
   }
@@ -34,3 +33,4 @@ export class MainPanel extends React.Component {
 
 
 export default MainPanel
+
