@@ -3,6 +3,7 @@ import './App.css'
 // import Navbar from './components/Navbar.js'
 import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
+import EscortProfil from './components/EscortProfil.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
 import All from './components/All.js'
@@ -61,7 +62,7 @@ class App extends Component {
                     </nav>
                     <Route path="/escorts" component={All} char={this.state.data}/>
                     <Route exact path="/myprofil" component={UserProfil}/>
-					<Route exact path="/reservation" component={UserProfil}/>
+					<Route exact path="/reservation" component={EscortProfil}/>
                 </div>
             </Router>
         )
