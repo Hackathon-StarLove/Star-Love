@@ -1,61 +1,41 @@
 import React, {Component} from 'react';
-import './css/Navbar.css'
-import './css/escort.css'
-import './css/profile.css'
 
-const createCharacterElement = character => {
-    return (
-        <div>
-            <a
-                className="character"
-                style={{
-                backgroundImage: `url(${character.pic})`
-            }}
-                href="profile.html?id==={character.id}">
-                <div className="character-infos">
-                    <div className="character-name">{character.name}</div>
-                    <div className="character-github"><img src={character.image}/>
-                    </div>
-                </div>
-            </a>
-        </div>
-    )
-}
-
-// const render = characters => {
-// characters.map(createCharacterElement).join('')} // style={{marginRight:
-// spacing + 'em'}}
-// fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
-// .then(res => res.json())   .then() export default All
-
-const API = 'https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/1.json';
-
-class EscortProfil extends Component {
+class Star extends Component {
     constructor() {
-        super();
+        super()
         this.state = {
-            data: []
-        };
-    }
-    async componentDidMount() {
-        const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/1.json')
-        const json = await response.json()
-        this.setState({data: json})
+            pictures: []
+        }
     }
 
+    componentDidMount() {
+        fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/1.json').then(result => {
+            return result.json()
+        }).then(pic => {
+                console.log('pic', pic.image)
+                let pictures = (
+                    <div className="imgContainer" key={pic.id}>
+                        <img className="starImg" src={pic.image} alt="alt"/>
+                        <div>{pic.name}</div>
+                    </div>
+                )
+            this.setState({pictures: pictures})
+            console.log("state", this.state.pictures)
+        })
+    }
     render() {
         return (
-            <div> {this.state.data.map(createCharacterElement)}
+            <div className="starList">
+                {this.state.pictures}
             </div>
         )
+
     }
 
-    // const All = ({char}) => {
-    //     if (char.length === 0) {
-    //         return <div>Loading Results</div>
-    //     }
+}
 
-    //     return <div>{char.map(createCharacterElement)}</div>
-    }
+/*  {pictures.map((pict) => (
+            <img className="characters" src={pict.image} alt = "alt"/>
+          ))}<div className="characters" style = {backgroundImage ={`url(${pict.image})`}} >*/
 
-    export default EscortProfil
+export default Star
