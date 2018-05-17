@@ -5,7 +5,7 @@ import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
 // import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
-import All from './components/All.js'
+import EscortContainer from './components/EscortContainer.js'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
 import './components/css/profile.css'
@@ -59,7 +59,7 @@ class App extends Component {
                             <p>Log out</p>
                         </div>
                     </nav>
-                    <Route path="/escorts" component={All} char={this.state.data}/>
+                    <Route path="/escorts" component={EscortContainer} char={this.state.data}/>
                     <Route exact path="/myprofil" component={UserProfil}/>
 					<Route exact path="/reservation" component={UserProfil}/>
                 </div>
