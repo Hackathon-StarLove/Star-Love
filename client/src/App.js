@@ -56,23 +56,22 @@ class App extends Component {
                                 <li>
                                     <img src="http://via.placeholder.com/70x70" alt="My reservations"/>
                                     <p>My reservations</p>
-									</Link>
                                 </li>
+
                             </ul>
                         </div>
                         <div className="logout">
                             <img src={logout} alt="Log out"/>
                             <p>Log out</p>
                         </div>
+                         
                     </nav>
-
-                    <Route path="/escorts" component={EscortContainer} char={this.state.data}/>
-                    <Route exact path="/myprofil" component={UserProfil}/>
-                    <Route path="/escorts" component={All}/>
-                    <Route exact path="/myprofil" component={Star}/>
-					<Route exact path="/reservation" component={Star}/>
-                </div>
-            </Router>
+                    </div>
+                </Router>
+                <Route path="/escorts" component={EscortContainer} char={this.state.data}/> {/* <Route exact path="/myprofil" component={UserProfil}/> */}
+                <Route exact path="/myprofil" component={Star}/>
+                <Route exact path="/reservation" component={Star}/>
+         
         )
     }
 }
