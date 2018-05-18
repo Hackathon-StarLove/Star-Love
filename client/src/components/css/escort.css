@@ -1,10 +1,15 @@
 .escort-all {
     margin-left: 4.5rem;
+    display: flex;
+    flex-flow: wrap;
 }
+
 .escort-all div:first-child {
     display: flex;
     flex-flow: row wrap;
+
 }
+
 
 .escort-canvas {
     width: 12%;

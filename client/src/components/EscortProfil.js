@@ -45,45 +45,39 @@
 import React, {Component} from 'react';
 
 
-class EscortProfil extends Component {
-  constructor(){
-    super()
-      this.state = {
-        pictures:[]
-      }
-    }
+const EscortProfil = ({char}) => {
+    // console.log({char:[0].id})
+    return (
+                <div className="starList">
+                
+                  {char[0].image}
+                </div>)
+}
 
-  componentDidMount() {
-    fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
-      .then(result => {
-        return result.json()
-      })
-      .then(data => {
-
-        let pictures= data.map((pic) => {
-          console.log('pic',pic.image)
-          return (
-            <div className="imgContainer" key={pic.id}>
-              <img className= "starImg" src={pic.image} alt="alt"/>
-            </div>
-          )
-        })
+//         let pictures= data.map((pic) => {
+//           console.log('pic',pic.image)
+//           return (
+//             <div className="imgContainer" key={pic.id}>
+//               <img className= "starImg" src={pic.image} alt="alt"/>
+//             </div>
+//           )
+//         })
         
-        this.setState({pictures:pictures})
-        console.log("state", this.state.pictures)
-      })
-  }
-  render () {
-      return (
-        <div className="starList">
-          {this.state.pictures[5]}
-        </div>
-        )
+//         this.setState({pictures:pictures})
+//         console.log("state", this.state.pictures)
+//       })
+//   }
+//   render () {
+//       return (
+//         <div className="starList">
+//           {this.state.pictures}
+//         </div>
+//         )
 
-          }    
+//           }    
     
       
-    }
+//     }
   
 
       /*  {pictures.map((pict) => (
