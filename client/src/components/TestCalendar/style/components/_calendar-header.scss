@@ -1,0 +1,9 @@
+.rbc-header {
+    text-align: center;
+    background: $header-bg-color;
+    color: $header-color;
+
+    &--big {
+        height: 200px;
+    }
+}
