@@ -1,38 +1,86 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .Main-Title {
-  margin: 4rem auto;
-  font-size: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .15rem;
-  color: #f9e713;
+    margin: 4rem auto;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: #f9e713;
+    width: 100%;
+}
+
+.Edit {
+    height: 3vh;
+    float: right;
+    margin-right: 10vw;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f9e713;
+    background-color: transparent;
+}
+
+.ProfilePic {
+    margin: 0 5vh;
+    border: solid 4px #f9e713;
+}
+
+.flex-container {
+    display: flex;
+    margin: 10vh 10vw;
+    
+}
+
+.flex-container div {
+    text-align: left;
+}
+
+.flex-container p{
+
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.15rem;
+    color: #f9e713;
+    width: 100%;
+    padding: 6px;
+
+}
+
+.Description {
   width: 100%;
+  background-color: #f9e713;
+  color: #222;
+  height: 20vh;
+
 }
