@@ -54,12 +54,12 @@ class App extends Component {
                             <Link to="/"><img src={logo} alt="Logo"/></Link>
                         </div>
                         <div className="nav-item">
-                           <div>
+                           {/* <div>
                             <button onClick={this.onOpenModal}>Open modal</button>
                             <Modal open={open} onClose={this.onCloseModal} center>
                             <h2>Simple centered modal</h2>
                             </Modal>
-                            </div>
+                            </div> */}
                             <ul>
                                 <li>
                                     <Link to="/escorts"><img src={escortbook} alt="Escorts book"/>
