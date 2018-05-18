@@ -36,3 +36,61 @@
   color: #f9e713;
   width: 100%;
 }
+
+.Edit {
+  height: 3vh;
+  float: right;
+  margin-right: 10vw;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f9e713;
+  background-color: transparent;
+}
+
+.ProfilePic {
+  margin: 0 5vh;
+  border: solid 4px #f9e713;
+}
+
+.flex-container {
+  display: flex;
+  margin: 10vh 10vw;
+  
+}
+
+.flex-container div {
+  text-align: left;
+}
+
+.flex-container p{
+
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  color: #f9e713;
+  width: 100%;
+  padding: 6px;
+
+}
+
+.Description {
+max-width: 100%;
+background-color: #f9e713;
+color: #222;
+height: 18vh;
+text-align: left;
+margin-left: 12vw;
+margin-right: 7vw;
+border-left: solid 1vw #f9e713;
+border-right: solid 1vw #f9e713;
+border-radius: 20px;
+padding-top: 1vw;
+}
+
+.Description p {
+padding-top: 1vw;
+font-weight: 500;
+}
+
+

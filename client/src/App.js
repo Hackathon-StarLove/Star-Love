@@ -1,15 +1,13 @@
 import React, {Component} from 'react'
-import './App.css'
-// import Navbar from './components/Navbar.js'
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
-// import BasicExample from './components/Backend.js'
 import Title from './components/Title.js'
 import { EscortContainer, SelectionContainer } from './components/EscortContainer.js'
+import './App.css'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
 import './components/css/profile.css'
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import logo from './img/star-love-02.png'
 import escortbook from './img/star-love-04.png'
 import myprofile from './img/star-love-03.png'
