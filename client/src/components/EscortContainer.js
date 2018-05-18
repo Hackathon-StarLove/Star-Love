@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Title from './Title.js'
-import All from './All.js'
+import { All, Selection } from './All.js'
 
 const EscortContainer = ({char}) => {
 return <div className="container">
@@ -11,4 +11,13 @@ return <div className="container">
 </div>
 }
 
-export default EscortContainer 
+const SelectionContainer = ({char}) => {
+  return <div className="container">
+  <Title text="Find your intergalatic escort"/>
+  <div className="escort-all">
+  <Selection value={char}/>
+  </div>
+  </div>
+  }
+
+export { EscortContainer, SelectionContainer }

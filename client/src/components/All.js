@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './css/Navbar.css'
 import './css/escort.css'
 import './css/profile.css'
@@ -9,7 +9,7 @@ const createCharacterElement = character => {
             <a
                 className="character" href="profile.html?id==={character.id}">
                 <div className="character-infos">
-                    <div className="character-img"><img src={character.image}/>
+                    <div className="character-img"><img src={character.image} />
                     </div>
                     <div className="character-name"><p>{character.name}</p></div>
                 </div>
@@ -36,7 +36,7 @@ class All extends Component {
     async componentDidMount() {
         const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
         const json = await response.json()
-        this.setState({data: json})
+        this.setState({ data: json })
     }
 
     render() {
@@ -46,12 +46,28 @@ class All extends Component {
         )
     }
 
-    // const All = ({char}) => {
-    //     if (char.length === 0) {
-    //         return <div>Loading Results</div>
-    //     }
+}
 
-    //     return <div>{char.map(createCharacterElement)}</div>
+class Selection extends Component {
+    constructor() {
+        super();
+        this.state = {
+            data: []
+        };
+    }
+    async componentDidMount() {
+        const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
+        const json = await response.json()
+        this.setState({ data: json })
     }
 
-    export default All
+    render() {
+        return (
+            <div> {this.state.data.slice(0,16).map(createCharacterElement)}
+            </div>
+        )
+    }
+
+}
+
+export { All, Selection }
