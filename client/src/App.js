@@ -1,10 +1,14 @@
 import React, {Component} from 'react'
+import ReactDOM from 'react-dom';
+import Modal from 'react-responsive-modal';
+
+
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
 import Title from './components/Title.js'
 import { EscortContainer, SelectionContainer } from './components/EscortContainer.js'
-import Modal from './components/Modal.js'
+// import Modal from './components/Modal.js'
 import './App.css'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
@@ -18,8 +22,19 @@ import logout from './img/star-love-07.png'
 class App extends Component {
     state = {
         data: [],
-        test: ''
-    }
+        test: '',
+        open: false,
+    };
+
+    onOpenModal = () => {
+      this.setState({ open: true });
+    };
+
+    onCloseModal = () => {
+      this.setState({ open: false });
+    };
+
+
     async componentDidMount() {
         const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
         const json = await response.json()
@@ -30,6 +45,7 @@ class App extends Component {
     }
 
     render() {
+          const { open } = this.state;
         return (
             <Router>
                 <div className="App">
@@ -38,6 +54,12 @@ class App extends Component {
                             <Link to="/"><img src={logo} alt="Logo"/></Link>
                         </div>
                         <div className="nav-item">
+                           <div>
+                            <button onClick={this.onOpenModal}>Open modal</button>
+                            <Modal open={open} onClose={this.onCloseModal} center>
+                            <h2>Simple centered modal</h2>
+                            </Modal>
+                            </div>
                             <ul>
                                 <li>
                                     <Link to="/escorts"><img src={escortbook} alt="Escorts book"/>
