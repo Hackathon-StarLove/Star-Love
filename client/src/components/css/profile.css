@@ -45,3 +45,8 @@
     height: auto;
   }
 
+.flex-container div p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+

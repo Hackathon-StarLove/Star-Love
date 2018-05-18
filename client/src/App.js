@@ -13,7 +13,7 @@ import './App.css'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
 import './components/css/profile.css'
-import logo from './img/star-love-02.png'
+import logo from './img/logo.png'
 import escortbook from './img/star-love-04.png'
 import myprofile from './img/star-love-03.png'
 import reservation from './img/star-love-05.png'
@@ -42,7 +42,9 @@ class App extends Component {
                 <div className="App">
                     <nav>
                         <div className="logo">
-                            <Link to="/"><img src={logo} alt="Logo"/></Link>
+                            <Link to="/">
+                        <img src={logo} alt="Logo"/>
+                        </Link>
                         </div>
                         <div className="nav-item">
                             <ul>

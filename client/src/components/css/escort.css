@@ -58,11 +58,14 @@
 }
 
 .container h1 {
-    margin: 4rem auto;
+    margin: 3rem auto;
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .15rem;
     color: #f9e713;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

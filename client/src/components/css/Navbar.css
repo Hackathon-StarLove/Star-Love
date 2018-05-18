@@ -7,11 +7,27 @@ nav {
 }
 
 .logo {
+  z-index: 1;
   height: 20%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; */
+  margin-top: 4rem;
+}
+
+.logo img {
+  width: 11.9rem;
+  height: auto;
+}
+
+.name-site {
+  z-index: 2;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.65rem;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: -8.5rem;
 }
 
 .nav-item {

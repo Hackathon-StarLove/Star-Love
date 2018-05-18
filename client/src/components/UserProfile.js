@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import Title1 from './Title1.js'
 
 const UserProfile = ({char}) => {
-    return <div className="Blop">
-        <Title1 text="My Profil"/>
+    return <div className="container">
+        <Title1 text="My Profile"/>
         <div className="User">
             <button className="Edit">
                 Edit
@@ -17,10 +17,10 @@ const UserProfile = ({char}) => {
 
                 </div>
                 <div>
-                    <p>Name: Jane Doe</p>
-                    <p>Gender: Female</p>
-                    <p>Age: 24</p>
-                    <p>Affiliation: Empire</p>
+                    <p>Name: <span className="response-user">Jane Doe</span></p>
+                    <p>Gender: <span className="response-user">Female</span></p>
+                    <p>Age: <span className="response-user">24</span></p>
+                    <p>Affiliation: <span className="response-user">Empire</span></p>
                 </div>
             </div>
             <div className="Description"><h3>Description</h3><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
