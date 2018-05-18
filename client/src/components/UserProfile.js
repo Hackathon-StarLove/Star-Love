@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Title from './Title.js'
 
 const UserProfile = ({char}) => {
-    return <div className="container">
+    return <div className="Blop">
         <Title text="My Profil"/>
         <div className="User">
             <button className="Edit">

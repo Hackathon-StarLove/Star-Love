@@ -93,4 +93,17 @@ padding-top: 1vw;
 font-weight: 500;
 }
 
+.custom-overlay {
+  background: #f9e6133f}
+.custom-modal {
+  background: #b2dbbf;
+  /* margin-bottom: 10vh; */
+  width: 100%;
+/* display: flex;
+  justify-content: center; */
+}
+
+.Blop{
+  margin-left: 12vh
+}
 

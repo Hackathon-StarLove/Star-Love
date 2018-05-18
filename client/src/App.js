@@ -23,17 +23,7 @@ class App extends Component {
     state = {
         data: [],
         test: '',
-        open: false,
     };
-
-    onOpenModal = () => {
-      this.setState({ open: true });
-    };
-
-    onCloseModal = () => {
-      this.setState({ open: false });
-    };
-
 
     async componentDidMount() {
         const response = await fetch('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
@@ -54,12 +44,6 @@ class App extends Component {
                             <Link to="/"><img src={logo} alt="Logo"/></Link>
                         </div>
                         <div className="nav-item">
-                           {/* <div>
-                            <button onClick={this.onOpenModal}>Open modal</button>
-                            <Modal open={open} onClose={this.onCloseModal} center>
-                            <h2>Simple centered modal</h2>
-                            </Modal>
-                            </div> */}
                             <ul>
                                 <li>
                                     <Link to="/escorts"><img src={escortbook} alt="Escorts book"/>
