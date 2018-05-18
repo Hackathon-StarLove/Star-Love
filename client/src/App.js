@@ -4,6 +4,7 @@ import UserProfil from './components/UserProfile.js'
 import Reserve from './components/ReserveButton.js'
 import Title from './components/Title.js'
 import { EscortContainer, SelectionContainer } from './components/EscortContainer.js'
+import SimpleForm from './components/form.js'
 import './App.css'
 import './components/css/Navbar.css'
 import './components/css/escort.css'
@@ -65,7 +66,7 @@ class App extends Component {
                     <Route exact path="/" component={SelectionContainer} char={this.state.data}/>
                     <Route exact path="/escorts" component={EscortContainer} char={this.state.data}/>                    
                     <Route exact path="/myprofil" component={UserProfil}/>
-					<Route exact path="/reservation" component={UserProfil}/>
+					<Route exact path="/reservation" component={SimpleForm}/>
                 </div>
             </Router>
         )
