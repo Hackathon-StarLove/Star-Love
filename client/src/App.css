@@ -69,7 +69,7 @@
 .flex-container p{
 
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 0.15rem;
     color: #f9e713;
     width: 100%;
@@ -78,9 +78,22 @@
 }
 
 .Description {
-  width: 100%;
+  max-width: 100%;
   background-color: #f9e713;
   color: #222;
-  height: 20vh;
-
+  height: 18vh;
+  text-align: left;
+  margin-left: 12vw;
+  margin-right: 7vw;
+  border-left: solid 1vw #f9e713;
+  border-right: solid 1vw #f9e713;
+  border-radius: 20px;
+  padding-top: 1vw;
 }
+
+.Description p {
+  padding-top: 1vw;
+  font-weight: 500;
+}
+
+
