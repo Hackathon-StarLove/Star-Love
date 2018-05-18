@@ -19,6 +19,7 @@ import myprofile from './img/star-love-03.png'
 import reservation from './img/star-love-05.png'
 import logout from './img/star-love-07.png'
 
+
 class App extends Component {
     state = {
         data: [],

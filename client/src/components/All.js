@@ -4,9 +4,10 @@ import './css/escort.css'
 import './css/profile.css'
 import ReactDOM from 'react-dom';
 import Modal from 'react-responsive-modal';
-import UserProfil from './UserProfile.js'
+import EscortProfil from './EscortProfil';
 
 const createCharacterElement = character => {
+    // for (let i = 0;
     return (
         <div className="escort-canvas">
             <a
@@ -59,7 +60,7 @@ class All extends Component {
                         .map(createCharacterElement)}</div>
                 <div>
                     <Modal open={open} onClose={this.onCloseModal} classNames={{ overlay: 'custom-overlay', modal: 'custom-modal' }}>
-                        <div><UserProfil/></div>
+                        <div><EscortProfil/></div>
                     </Modal>
                 </div>
             </div>

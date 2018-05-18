@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import Title from './Title.js'
+import Title1 from './Title1.js'
 
 const UserProfile = ({char}) => {
     return <div className="Blop">
-        <Title text="My Profil"/>
+        <Title1 text="My Profil"/>
         <div className="User">
             <button className="Edit">
                 Edit
