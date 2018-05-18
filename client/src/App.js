@@ -14,7 +14,7 @@ import logo from './img/star-love-02.png'
 import escortbook from './img/star-love-04.png'
 import myprofile from './img/star-love-03.png'
 import reservation from './img/star-love-05.png'
-import logout from './img/star-love-06.png'
+import logout from './img/star-love-07.png'
 
 class App extends Component {
     state = {

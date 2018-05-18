@@ -2,7 +2,8 @@ nav {
   position: fixed;
   width: 12vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.8);
+  border-right: 0.4rem solid #f9e713;
 }
 
 .logo {
@@ -28,11 +29,16 @@ nav {
 }
 
 .nav-item ul li img {
-  border-radius: 50%;
+  width: 7rem;
+  height: auto;
 }
 
 .nav-item ul li p {
-  margin: 0.6rem 0 2rem;
+  margin: 1rem 0 2rem;
+  text-transform: uppercase;
+  color: #f9e713;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .logout {
@@ -44,9 +50,14 @@ nav {
 }
 
 .logout img {
-  border-radius: 50%;
+  width: 2.5rem;
+  height: auto;
 }
 
 .logout p {
+  margin: 1rem 0 2rem;
+  text-transform: uppercase;
+  color: #f9e713;
   font-size: 1.15rem;
+  font-weight: 600;
 }
