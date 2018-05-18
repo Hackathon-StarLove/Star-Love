@@ -1,0 +1,68 @@
+.escort-all {
+    margin-left: 4.5rem;
+}
+.escort-all div:first-child {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.escort-canvas {
+    width: 12%;
+    border: solid black 0.2rem;
+}
+
+.character-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.character-img img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    min-height: 100%;
+    filter: grayscale(100%);
+}
+
+.character-img img:hover {
+    filter: grayscale(0%); 
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.character-name {
+    z-index: 2;
+    background: #f9e713;
+    width: 100%;
+    color: #000;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-name p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* ---- EscortContainer style ---- */
+.container {
+    position: absolute;
+    width: 86vw;
+    height: 100vh;
+    margin-left: 12vw;
+}
+
+.container h1 {
+    margin: 4rem auto;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: #f9e713;
+    width: 100%;
+}
